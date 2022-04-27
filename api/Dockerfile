@@ -5,13 +5,14 @@ WORKDIR	/backend
 COPY	Pipfile .
 
 COPY	Pipfile.lock .
-
+CMD ["pipenv", "run", "python3", "main.py"]
 RUN pip install pipenv
+RUN pipenv lock --requirements > requirements.txt
+RUN	 pipenv install -r requirements.txt
 
 COPY	. .
 
-RUN	 pipenv install
-
 EXPOSE 5050
 
-CMD ["pipenv", "run", "python3", "main.py"]
+
+# CMD [ "python3", "main.py" ]
