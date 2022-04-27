@@ -21,3 +21,16 @@ UNSPLASH_KEY=2MJvApIkV13hfg2LmQlneILfHoJ2ttlzSdPKefGOyKM
 ```
 
 - Save modified **.env.local** file
+
+## RUN FRONT END APP DOCKER
+```
+# docker build -t einsteinnwizu/img-gallery-app:v1 .
+# docker run -d --name image-gallery-frontend-con -p 3000:80 einstennwizu/image-gallery-backend:v1
+```
+
+## RUN BACKEND api APP DOCKER
+```
+# docker build -t einstennwizu/image-gallery-backend:v1 .
+# docker run -d --name image-gallery-backend-con -p 5050:5050 einstennwizu/image-gallery-backend:v1
+```
+
