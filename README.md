@@ -33,6 +33,6 @@ docker network create image-gallery-network
 ## RUN BACKEND api APP DOCKER
 ```
 # docker build -t einsteinnwizu/image-gallery-backend:v1 .
-# docker run -d --name image-gallery-backend-con --network image-gallery-network -p 5050:5050 einsteinnwizu/image-gallery-backend:v2
+# docker run -d --name image-gallery-backend-con --network image-gallery-network -p 5050:5050 einsteinnwizu/image-gallery-backend:v1
 ```
 
