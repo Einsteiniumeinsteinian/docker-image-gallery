@@ -20,8 +20,6 @@ UNSPLASH_KEY=<Paste copied Access Key here>
 UNSPLASH_KEY=2MJvApIkV13hfg2LmQlneILfHoJ2ttlzSdPKefGOyKM
 ```
 
-- Save modified **.env.local** file
-
 ## Create custom network 
 ```
 docker network create image-gallery-network 
