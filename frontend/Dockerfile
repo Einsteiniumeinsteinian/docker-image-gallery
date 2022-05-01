@@ -1,4 +1,4 @@
-FROM node:lts-alpine3.15 As builder
+FROM node:15.14-alpine As builder
 WORKDIR /app
 COPY package.json .
 COPY package-lock.json .

@@ -48,3 +48,9 @@ UNSPLASH_KEY=2MJvApIkV13hfg2LmQlneILfHoJ2ttlzSdPKefGOyKM
 docker container cp .env.local image-gallery-backend-con:/backend/
 ```
 *Ensure you are in the same directory as the .env.local file*
+
+## DOCKER COMPOSE
+```
+docker-compose up --build
+```
+*copy*
